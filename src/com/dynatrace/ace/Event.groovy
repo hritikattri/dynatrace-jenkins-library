@@ -38,7 +38,7 @@ def sendDynatraceEvent( String dtTenantUrl, String dtApiToken, Map postBody ) {
     httpMode: 'POST',
     requestBody: JsonOutput.toJson(postBody),
     responseHandle: 'STRING',
-    url: "${dtTenantUrl}/api/v1/events",
+    url: "${dtTenantUrl}/api/v2/events",
     validResponseCodes: "200:403",
     ignoreSslErrors: true
 
